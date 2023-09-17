@@ -1,0 +1,28 @@
+html,body{
+          background-image: linear-gradient(rgb(14, 7, 43),rgb(0, 0, 0),rgb(2, 4, 27));
+        height: 100%;
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow-y: hidden;
+      }
+      div{
+        width: 40vmin;
+        height: 40vmin;
+        border-radius: 50%;
+        background-color:rgba(0, 0, 0, 0.8);
+        animation: animate 5s linear infinite alternate-reverse;
+      }
+      @keyframes animate{
+        0%{
+          box-shadow: -40px 0px 5px 0px white;
+        }
+        50%{
+            box-shadow: 0px 0px 30px 0px white;
+        }
+        100%{
+            box-shadow: 40px 0px 5px 0px white;          
+        }
+      }
